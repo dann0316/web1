@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src = "colors.js"></script>
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <!-- <input type = "button" value = "night" onclick ="
+        document.querySelector('body').style.backgroundColor = 'black';
+        //이 문서의 요청되는 선택자 즉, body 태그의 스타일의 배경색을 검은색으로
+        document.querySelector('body').style.color = 'white';
+    ">
+
+    <input type = "button" value = "day" onclick ="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+    ">
+    -->
+
+    <input id = "night_day" type = "button" value = "night" onclick="
+    //약간 특이한게 JS는 태그 안에 코드를 넣어버리네
+    nightDayHandler(this);
+    ">
+
+    <!--지금은 이렇게 onclick안에 자바스크립트가 있지만 함수를 쓰려면 <script>를 써야한다.-->
+
+        
+
+    <br><br><br>어떤 문장이 있다고 하고 방금 버튼을 아래로 하고싶다고 하자<br>
+    agsdffffffffasdfasdfasdfafsd<br>
+    asdfasdfasdfsdfasdfasdfsafasdf<br>
+    asdfasdfasdasdffasdfaasdf<br>
+
+    <ol>
+        
+        <h1><li><a href ="https://ko.wikipedia.org/wiki/%EC%9B%B9">web</h1></li>
+        <h1><li><a href ="https://namu.wiki/w/JavaScript">JavaScript</a></h1></li>
+        <h1><li><a href ="https://namu.wiki/w/CSS">CSS</a></h1></li>
+        <h1><li><a href ="https://namu.wiki/w/HTML">html</a></h1></li>
+        
+    </ol>
+
+
+
+    <!--
+    <input  type = "button" value = "night" onclick="
+    if (this.value === 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        this.value = 'day';
+    } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        this.value = 'night';
+    }
+    ">
+    -->
+    <!--변수 이용해서 중복제거, this 키워드 사용
+    input 태그 안에 원래 id = "night_day" 와 이걸 가리키는 document.querySelector('#night_day')
+    가 있었는데 이는 그냥 자기 자신에게 쓰겠는 말을 쓰는 것이므로 this로 대체-->
+
+</body>
+</html>
